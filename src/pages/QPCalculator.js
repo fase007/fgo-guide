@@ -304,7 +304,7 @@ function QPCalculator() {
               checked={mlbSupportCE}
               onChange={(e) => setMlbSupportCE(e.target.checked)}
             />
-            MLB
+            ยังไม่ปลด
           </label>
         </div>
                 {/* ผลลัพธ์ */}
