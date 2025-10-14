@@ -1,0 +1,12 @@
+# Xampp เปิดการทำงานของ Xampp เสมอโดยเปิด Apache2 และ MySQL Server ให้สถานะเป็นสีเขียว 
+ีusername: admin
+password: 1qazxsw2@
+
+./api (เปิดการทำงานของ API Calling) # ตรวจสอบก่อนว่าอยู่ยังใน path C:\fgo\game-sample-project\api>... ไหม
+-- node dbserver.js
+โดยเช็คการทำงานให้เป็น console log แบบนี้  
+Server running on http://localhost:8000
+✅ Connected to MySQL database
+
+./ (เปิดการทำงานของหน้าบ้าน ออกเป็นเว็บบนเว็บเบราเซอร์) 
+-- npm start

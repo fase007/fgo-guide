@@ -1,0 +1,104 @@
+/* ===== Expert Page Style ===== */
+
+body {
+  background-color: #e6f7ff; /* ฟ้าอ่อน */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.expert-container {
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.team-card {
+  background-color: #dff3ff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card h2 {
+  font-size: 1.8rem;
+  color: #004b80;
+  margin-bottom: 20px;
+}
+
+/* จัด Select Character ให้อยู่ข้างกัน */
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* การ์ดแต่ละตัวละคร */
+.member-card {
+  background-color: #ffffff;
+  border: 1px solid #b5d9f7;
+  border-radius: 15px;
+  padding: 15px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ปรับ input และ select ให้ดูเรียบ */
+select,
+input[type="number"] {
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #a9c8e8;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  background-color: #f8fcff;
+  transition: border-color 0.2s ease;
+}
+
+select:focus,
+input[type="number"]:focus {
+
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 3px rgba(0, 119, 204, 0.3);
+}
+
+/* โอกาสชนะทีม */
+.winrate {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #004b80;
+  margin-top: 20px;
+}
+
+.lv-card{
+  text-align: center;
+}
+

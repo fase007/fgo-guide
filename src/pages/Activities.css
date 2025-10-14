@@ -1,0 +1,57 @@
+.activities-container {
+  padding: 20px;
+}
+
+.activities-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.event-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.event-banner {
+  width: 150px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.event-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.event-info p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.event-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.event-info a:hover {
+  text-decoration: underline;
+}
+
+section h2 {
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.past-list {
+  margin-top: 10px;
+}
+.page-container {
+  background-color: #e6f7ff; /* ฟ้าอ่อน */
+  padding: 20px;
+  border-radius: 10px;
+}

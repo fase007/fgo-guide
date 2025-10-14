@@ -1,0 +1,34 @@
+.page-container {
+  max-width: 800px;  /* กว้างสุด */
+  margin: 0 auto;    /* จัดกึ่งกลาง */
+  padding: 20px;     /* เว้นขอบด้านใน */
+  line-height: 1.8;  /* ระยะห่างบรรทัด */
+}
+
+.page-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page-container h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.page-container h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.page-container ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.page-container {
+  background-color: #e6f7ff; /* ฟ้าอ่อน */
+  padding: 20px;
+  border-radius: 10px;
+}
