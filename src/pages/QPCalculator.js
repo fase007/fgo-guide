@@ -277,7 +277,7 @@ function QPCalculator() {
                     checked={mlbCEs[index]}
                     onChange={(e) => handleMLBChange(index, e.target.checked)}
                   />
-                  MLB
+                  ยังไม่ปลด
                 </label>
               </div>
             ))}
