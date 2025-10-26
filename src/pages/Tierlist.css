@@ -1,0 +1,60 @@
+.tierlist-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #0b0b15;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.tierlist-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* เรียงภาพในแนวตั้ง */
+.tierlist-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.tierlist-item {
+  background-color: #1c1c2b;
+  border-radius: 12px;
+  padding: 10px;
+  width: 80%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.tierlist-item:hover {
+  transform: scale(1.03);
+}
+
+.tierlist-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tier-text {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #00b4ff;
+}
+
+.back-link {
+  margin-top: 40px;
+}
+
+.back-link a {
+  color: #00b4ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}

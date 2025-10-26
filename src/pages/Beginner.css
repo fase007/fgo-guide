@@ -32,3 +32,22 @@
   padding: 20px;
   border-radius: 10px;
 }
+
+/* ✅ ส่วนรูปภาพ */
+.beginner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  width: 100%;
+}
+
+/* ✅ ปรับขนาดรูปใหญ่ขึ้นและอยู่กลาง */
+.beginner-image img {
+  width: 90%;           /* กว้างขึ้น */
+  max-width: 1000px;    /* ไม่เกิน 1000px */
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+}

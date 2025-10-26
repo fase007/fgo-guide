@@ -14,6 +14,7 @@ import Activities from './pages/Activities';
 import Weekrequest from './pages/Weekrequest';
 import QPCalculator from "./pages/QPCalculator";
 import Expert from "./pages/Expert";
+import Tierlist from './pages/Tierlist';
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/qp-calculator" element={<QPCalculator />} />
           <Route path="/expert" element={<Expert />} />
+          <Route path="/Tierlist" element={<Tierlist />} />
           {/* เวอร์ชันสอง */}
           <Route path="/characters/:id" element={<CharacterDetail />} />
           <Route path="/characters" element={<Characters />} />
