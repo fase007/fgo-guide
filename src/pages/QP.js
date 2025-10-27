@@ -9,9 +9,6 @@ function QP() {
         <img src="/pageimages/QP1.png" alt="FGO QP1" />
       </div>
 
-      <div className="beginner-image">
-        <img src="/pageimages/QP2.png" alt="FGO QP2" />
-      </div>
 
       <h2>1) QP คืออะไร และทำไมต้องสนใจ</h2>
       <p>
@@ -139,6 +136,10 @@ function QP() {
         <li>เลือกทีมที่เคลียร์ได้ไวและใช้ AP ให้ได้ QP ต่อเวลา/ต่อ AP สูงสุด</li>
         <li>บริหาร QP: ปั้นตัวหลักก่อน อย่ารีบกระจาย QP ไปหลายตัวพร้อมกัน</li>
       </ol>
+
+      <div className="beginner-image">
+        <img src="/pageimages/QP2.png" alt="FGO QP2" />
+      </div>
 
       <hr />
 

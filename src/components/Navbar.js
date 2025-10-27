@@ -11,6 +11,7 @@ function Navbar() {
         <Link to="/characters">Characters</Link>
         <Link to="/activities">Activities</Link>
         <Link to="/weekrequest">WeekRequest</Link>
+        <Link to="/Tierlist" >Tierlist</Link>
       </div>
     </nav>
   );
