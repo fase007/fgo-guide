@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Expert.css";
 
-// mock API ดึงข้อมูลจาก PHP (จะเปลี่ยน URL เป็น API จริงทีหลัง)
 const API_URL = "http://localhost:8000/api/getData?type=servants";
 
 function Expert() {
@@ -23,13 +22,35 @@ function Expert() {
 
   const handleChange = (teamIndex, memberIndex, field, value, skillIndex) => {
     const newTeams = [...teams];
+    let val = parseInt(value);
+
+    // ✅ ถ้าค่าว่างหรือเป็น 0 → ไม่ทำอะไรเลย
+    if (value === "" || val === 0 || isNaN(val)) {
+      return;
+    }
+
     if (field === "charId") {
       newTeams[teamIndex][memberIndex].charId = parseInt(value);
     } else if (field === "level") {
-      newTeams[teamIndex][memberIndex].level = parseInt(value);
+      if (val > 100) {
+        alert("เลเวลสูงสุดคือ 100 เท่านั้น!");
+        val = 100;
+      } else if (val < 1) {
+        alert("เลเวลต่ำสุดคือ 1!");
+        val = 1;
+      }
+      newTeams[teamIndex][memberIndex].level = val;
     } else if (field === "skill") {
-      newTeams[teamIndex][memberIndex].skills[skillIndex] = parseInt(value);
+      if (val > 10) {
+        alert("สกิลสูงสุดคือ 10 เท่านั้น!");
+        val = 10;
+      } else if (val < 1) {
+        alert("สกิลต่ำสุดคือ 1!");
+        val = 1;
+      }
+      newTeams[teamIndex][memberIndex].skills[skillIndex] = val;
     }
+
     setTeams(newTeams);
   };
 
@@ -51,7 +72,6 @@ function Expert() {
     const avgLevel = totalLevel / count;
     const avgSkill = totalSkill / (count * 3);
 
-    // สูตรจำลอง: (เลเวล/100 + สกิล/10) * 50%
     return Math.min(100, ((avgLevel / 100 + avgSkill / 10) * 50).toFixed(2));
   };
 
@@ -120,12 +140,11 @@ function Expert() {
             ))}
           </div>
 
-          {/* โอกาสชนะ */}
           <p className="winrate">
             โอกาสชนะของทีมนี้: {calculateWinRate(team)}%
           </p>
           <p className="winrate">
-            การคำนวณมีโอกาศผิดพลาดได้ ทางเราจะพัฒนาต่อไป
+            การคำนวณมีโอกาสผิดพลาดได้ ทางเราจะพัฒนาต่อไป
           </p>
         </div>
       ))}
