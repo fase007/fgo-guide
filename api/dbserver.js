@@ -2,21 +2,20 @@
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
-const dotenv = require("dotenv");
-
-dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
+// 🔹 ตั้งค่าการเชื่อมต่อฐานข้อมูลโดยตรง (ไม่ใช้ .env)
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: "jupiter.csc.ku.ac.th",        
+  user: "6540200398",             
+  password: "1qazxsw2@",             
+  database: "data6540200398", 
 });
 
+// 🔹 ตรวจสอบการเชื่อมต่อ
 db.connect((err) => {
   if (err) {
     console.error("❌ Database connection failed:", err);
@@ -25,7 +24,7 @@ db.connect((err) => {
   }
 });
 
-// API ดึงข้อมูลจากแต่ละตาราง
+// 🔹 API ดึงข้อมูลจากแต่ละตาราง
 app.get("/api/getData", (req, res) => {
   const { type } = req.query;
 
@@ -58,7 +57,8 @@ app.get("/api/getData", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 8000;
+// 🔹 เริ่มเซิร์ฟเวอร์
+const PORT = 8000;
 app.listen(PORT, () => {
-  console.log(` Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
